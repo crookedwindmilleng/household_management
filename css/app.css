@@ -900,3 +900,6 @@ input[type="checkbox"], input[type="radio"] { accent-color:#315b43 !important; }
 .notification-row-actions { margin-left:auto; }
 .notification-row:focus-visible { outline:2px solid #c4a15b; outline-offset:2px; }
 @media(max-width:650px){ .calendar-actions .primary-button{width:100%;} }
+
+/* WIWY 0.10.8 company attribution */
+.app-footer .app-attribution{display:block;margin-top:5px;color:#bda77c;font-size:9px;letter-spacing:.08em;font-style:normal}
