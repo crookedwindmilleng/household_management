@@ -419,7 +419,7 @@ function renderCalendar(){
 }
 function render() {
   const visibleWorkspaceName = authenticatedWorkspace?.name || Store.getState().workspace.name;
-  const aboutVersion = document.getElementById("aboutVersion"); if (aboutVersion) aboutVersion.textContent = `WIWY · Version ${WIWY_VERSION} · Household reliability and profile improvements`;
+  const aboutVersion = document.getElementById("aboutVersion"); if (aboutVersion) aboutVersion.textContent = `WIWY · Version ${WIWY_VERSION} · Champagne logo and company attribution`;
   $("workspaceName").textContent = visibleWorkspaceName;
   $("settingsWorkspace").value = visibleWorkspaceName;
   const preserveObservanceDraft=$("observanceSettings").contains(document.activeElement);
@@ -442,7 +442,7 @@ function render() {
 }
 
 // WIWY 0.9.6 — user-controlled application updates.
-const WIWY_VERSION="0.10.7";
+const WIWY_VERSION="0.10.8";
 let wiwyRegistration=null;
 let updateInstallInProgress=false;
 function showUpdateBanner(version,notes=""){
