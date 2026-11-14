@@ -119,7 +119,10 @@ export async function requireAuth() {
         if (mode === "signup") {
           result = await client.auth.signUp({
             email, password,
-            options: { data: { full_name: displayName || email.split("@")[0] }, emailRedirectTo: location.href }
+            options: {
+  data: { full_name: displayName || email.split("@")[0] },
+  emailRedirectTo: "https://crookedwindmilleng.github.io/household_management/"
+}
           });
           if (result.error) throw result.error;
           if (!result.data.session) {
